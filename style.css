@@ -150,19 +150,18 @@ footer p {
   .vacation .item {
     flex-direction: column;
     justify-content: flex-end;
-
   }
-  .item label
-  , .item input 
-  , .item select 
-  , .item button{
+  .item label,
+  .item input,
+  .item select,
+  .item button {
     display: flex;
-    width: 100%
+    width: 100%;
   }
   .grid-column {
     display: flex;
     flex: 1;
-    flex-direction: column; 
+    flex-direction: column;
     margin: 10px;
   }
   .grid-row {
