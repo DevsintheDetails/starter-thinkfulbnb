@@ -43,7 +43,7 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin:10px
 }
 
 .item-double {
@@ -60,7 +60,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 48px;
   color: #fff;
 }
 
@@ -94,6 +94,11 @@ form {
   padding: 10px;
 }
 
+.form-dis{
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -102,7 +107,6 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 65%;
-  float: right;
 }
 
 form button {
@@ -112,6 +116,7 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  justify-content: center;
 }
 
 /* -------  Footer ------- */
@@ -129,17 +134,25 @@ footer p {
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
   header {
+    flex-wrap: wrap;
     background-color: #ff385c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .logo {
+    font-size: 72px;
+  }
+
   header nav {
     padding: 10px;
   }
+
   form {
     flex-direction: row;
   }
+
   .group {
     display: flex;
     flex-direction: row;
@@ -147,10 +160,17 @@ footer p {
     flex-flow: row nowrap;
     align-items: center;
   }
+
+  .vacation {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .vacation .item {
     flex-direction: column;
     justify-content: flex-end;
   }
+
   .item label,
   .item input,
   .item select,
@@ -158,12 +178,14 @@ footer p {
     display: flex;
     width: 100%;
   }
+
   .grid-column {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin: 10px;
   }
+
   .grid-row {
     display: flex;
     flex: 1;
